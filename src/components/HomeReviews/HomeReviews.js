@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import useReviews from "../../hooks/useReviews";
 import Review from "../Review/Review";
 
@@ -16,7 +17,9 @@ const HomeReviews = () => {
         ))}
       </Row>
       <Button variant="primary" size="sm" className="my-5 px-5">
-        See All Reviews
+        <Link to="/reviews" className=" text-decoration-none   text-light">
+          See All Reviews
+        </Link>
       </Button>
     </Container>
   );
