@@ -26,7 +26,7 @@ const DashBoard = () => {
       .then((data) => setRechart(data));
   }, []);
   return (
-    <Container className="mx-auto">
+    <Container className="mx-auto my-5">
       <Row xs={1} md={2} className="g-4 p-0">
         <Col className="p-0  mb-4">
           <Card className="p-0 border-0">
