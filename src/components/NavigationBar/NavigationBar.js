@@ -1,10 +1,9 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
 const NavigationBar = () => {
   return (
-    <Navbar bg="info" expand="lg" sticky="top" className="mb-5">
+    <Navbar bg="primary" expand="lg" sticky="top" className="mb-5">
       <Container fluid>
         <Navbar.Brand href="#" className=" fw-bold text-dark fs-1">
           Sound Guys

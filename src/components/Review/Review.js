@@ -10,18 +10,14 @@ const Review = ({ review }) => {
       <Card className="justify-content-center align-items-center border-0 shadow rounded-3 h-100  py-3">
         <Card.Img className="rounded-circle w-50" variant="top" src={img} />
         <Card.Body>
-          <Card.Title>
+          <div>
             <small className="fw-bold me-3">{name}</small>{" "}
             <small className="text-warning me-2">
               <FontAwesomeIcon icon={faStar} />
             </small>
             <small className="text-secondary">{rating}</small>
-          </Card.Title>
-          <Card.Text>
-            <blockquote className="blockquote-footer mt-3">
-              {comment}
-            </blockquote>
-          </Card.Text>
+          </div>
+          <blockquote className="blockquote-footer mt-3">{comment}</blockquote>
         </Card.Body>
       </Card>
     </Col>
