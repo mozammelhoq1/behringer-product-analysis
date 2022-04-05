@@ -1,6 +1,6 @@
 # Behringer
 
-Live Site [Behringer](https://frabjous-lollipop-4e51df.netlify.app/home).
+Live Site [Behringer](https://frabjous-lollipop-4e51df.netlify.app).
 
 ## This Project Was Created By
 
