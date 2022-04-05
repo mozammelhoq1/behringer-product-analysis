@@ -1,14 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Container, Row } from "react-bootstrap";
+import useReviews from "../../hooks/useReviews";
 import Review from "../Review/Review";
 
 const HomeReviews = () => {
-  const [reviews, setReviews] = useState([]);
-  useEffect(() => {
-    fetch("review.json")
-      .then((res) => res.json())
-      .then((data) => setReviews(data));
-  }, []);
+  const [reviews] = useReviews();
   return (
     <Container>
       <Row xs={1} md={2} lg={3} xl={4} className="g-4">
