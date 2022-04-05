@@ -16,7 +16,6 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import "./DashBoard.css";
 
 const DashBoard = () => {
   const [rechart, setRechart] = useState([]);
@@ -29,7 +28,7 @@ const DashBoard = () => {
   return (
     <Container className="mx-auto">
       <Row xs={1} md={2} className="g-4 p-0">
-        <Col className="p-0">
+        <Col className="p-0  mb-4">
           <Card className="p-0 border-0">
             <ResponsiveContainer width={"95%"} height={400}>
               <LineChart width={300} height={300} data={rechart}>
@@ -45,8 +44,9 @@ const DashBoard = () => {
               </LineChart>
             </ResponsiveContainer>
           </Card>
+          <p className="fw-bold">Monthly Sell</p>
         </Col>
-        <Col>
+        <Col className="p-0  mb-4">
           <Card className="p-0 border-0">
             <ResponsiveContainer width={"95%"} height={400}>
               <AreaChart width={300} height={300} data={rechart}>
@@ -71,9 +71,10 @@ const DashBoard = () => {
               </AreaChart>
             </ResponsiveContainer>
           </Card>
+          <p className="fw-bold">Investment VS Revenue</p>
         </Col>
-        <Col>
-          <Card className="p-0 border-0">
+        <Col className="p-0  mb-4">
+          <Card className="p-0 border-0 ">
             <ResponsiveContainer width={"95%"} height={400}>
               <PieChart width={300} height={300}>
                 <Pie
@@ -100,6 +101,7 @@ const DashBoard = () => {
               </PieChart>
             </ResponsiveContainer>
           </Card>
+          <p className="fw-bold">Monthly Investment And Revenue</p>
         </Col>
       </Row>
     </Container>
