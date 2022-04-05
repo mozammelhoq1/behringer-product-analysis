@@ -1,10 +1,14 @@
-# Getting Started with Create React App
+# Behringer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live Site [Create React App](https://frabjous-lollipop-4e51df.netlify.app/home).
 
-## Available Scripts
+## This Project Was Created By
 
-In the project directory, you can run:
+- Html 5
+- Css 3
+- React-Bootstrap
+- React js
+- React-Router-dom
 
 ### `npm start`
 
